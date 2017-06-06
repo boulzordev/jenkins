@@ -14,7 +14,7 @@
 def labels = ['master']
 
 /* Devices to build */
-def devices = ['addison', 'angler', 'athene', 'bacon', 'bullhead', 'cancro', 'clark', 'crackling', 'd800', 'd801', 'd802', 'd803', 'd850', 'd851', 'd852', 'd855', 'deb', 'ether', 'f400', 'falcon', ferrari', 'find7', 'flo', 'g3ds', 'gemini', 'griffin', 'h811', 'h815', 'h830', 'h850', 'hammerhead', 'hammerheadcaf', 'herolte, 'hero2lte', 'himaul', 'hockie', 'hydrogen', 'i9300', 'jfltexx', 'kipper', 'klte', 'kltechn', 'kltechnduo', 'klteduos', 'kltedv', 'kltekor', 'kltespr', 'klteusc', 'kltevzw', 'ks01ltexx', 'lettuce', 'ls980', 'ls990', 'm8', 'm8d', 'mako', 'mido', 'oneplus3', 'onyx', 'marlin', 'potter', 'pme', 's2', 'sailfish', 'shamu', 'thea', 'titan', 'tomato', 'v500', 'vs980', 'vs985']
+def devices = ['addison', 'angler', 'athene', 'bacon', 'bullhead', 'cancro', 'clark', 'crackling', 'd800', 'd801', 'd802', 'd803', 'd850', 'd851', 'd852', 'd855', 'deb', 'ether', 'f400', 'falcon', 'ferrari', 'find7', 'flo', 'g3ds', 'gemini', 'griffin', 'h811', 'h815', 'h830', 'h850', 'hammerhead', 'hammerheadcaf', 'herolte', 'hero2lte', 'himaul', 'hockie', 'hydrogen', 'i9300', 'jfltexx', 'kipper', 'klte', 'kltechn', 'kltechnduo', 'klteduos', 'kltedv', 'kltekor', 'kltespr', 'klteusc', 'kltevzw', 'ks01ltexx', 'lettuce', 'ls980', 'ls990', 'm8', 'm8d', 'mako', 'mido', 'oneplus3', 'onyx', 'marlin', 'potter', 'pme', 's2', 'sailfish', 'shamu', 'thea', 'titan', 'tomato', 'v500', 'vs980', 'vs985']
 
 /* maps for parallel */
 def builders = [:]

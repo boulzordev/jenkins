@@ -24,6 +24,7 @@ public class Device implements Serializable {
 /* Nodes to build on */
 def myNodes = []
 myNodes += new MyNode(name: 'master', workingDir: '/home/vache/android/repos/cr')
+myNodes += new MyNode(name: 'home', workingDir: '/home/vache/android/cr')
 
 def devices = []
 
@@ -109,7 +110,7 @@ def stepsForParallel = [:]
 def transformIntoStep(device, myNode) {
     return {
         node(myNode.name) {
-            dir(path: ${myNode.workingDir}) {
+            dir(path: myNode.workingDir) {
                 sh """#!/bin/bash
 . ./build/envsetup.sh
 lunch lineage_$device-userdebug"""
@@ -130,7 +131,7 @@ pipeline {
 
                         builders[label.name] = {
                             node(label.name) {
-                                dir(path: ${label.name}) {
+                                dir(path: label.name) {
                                     //sh 'repo sync -j48 -cdf --force-sync'
                                     sh 'echo syncing..'
                                 }

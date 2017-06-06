@@ -4,4 +4,18 @@
     <!-- DEVICES -->
 
     <!-- VENDORS -->
+    <project path="vendor/motorola" name="TheMuppets/proprietary_vendor_motorola" remote="github"/>
+    <project path="vendor/oneplus" name="TheMuppets/proprietary_vendor_oneplus" remote="github"/>
+    <project path="vendor/leeco" name="TheMuppets/proprietary_vendor_leeco" remote="github"/>
+    <project path="vendor/xiaomi" name="TheMuppets/proprietary_vendor_xiaomi" remote="github"/>
+    <project path="vendor/yu" name="TheMuppets/proprietary_vendor_yu" remote="github"/>
+    <project path="vendor/samsung" name="TheMuppets/proprietary_vendor_samsung" remote="github"/>
+    <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" remote="github"/>
+    <project path="vendor/huawei" name="TheMuppets/proprietary_vendor_huawei" remote="github"/>
+    <project path="vendor/asus" name="TheMuppets/proprietary_vendor_asus" remote="github"/>
+    <project path="vendor/htc" name="TheMuppets/proprietary_vendor_htc" remote="github"/>
+    <project path="vendor/zuc" name="TheMuppets/proprietary_vendor_zuc" remote="github"/>
+    <project path="vendor/google" name="TheMuppets/proprietary_vendor_google" remote="github"/>
+    <project path="vendor/sony" name="TheMuppets/proprietary_vendor_sony" remote="github"/>
+    <project path="vendor/zte" name="TheMuppets/proprietary_vendor_zte" remote="github"/>
 </manifest>

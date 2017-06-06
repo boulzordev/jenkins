@@ -165,7 +165,7 @@ pipeline {
                         def device = devices.get(i)
                         def stepName = "${device.name}"
 
-                        if (GetCurrentDay() == device.buildDay) {
+                        if (GetCurrentDay() == device.buildDay && device.enabled) {
                             stepsForParallel[stepName] = transformIntoStep(device.name, device.node)
                         }
                     }

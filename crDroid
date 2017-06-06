@@ -1,0 +1,77 @@
+#!groovy
+
+/**
+* Declarative pipeline script to build OmniROM devices in Jenkins
+*
+* Heavy reliance on: 
+* https://github.com/jenkinsci/pipeline-examples/blob/master/pipeline-examples/parallel-from-list/parallelFromList.groovy
+* and
+* https://github.com/jenkinsci/pipeline-examples/blob/master/pipeline-examples/parallel-multiple-nodes/ParallelMultipleNodes.groovy
+*
+*/
+
+/* Nodes to build on */
+def labels = ['master']
+
+/* Devices to build */
+def devices = ['athene', 'griffin', 'potter']
+
+/* maps for parallel */
+def builders = [:]
+def stepsForParallel = [:]
+
+/* function to transform a string into a step */
+def transformIntoStep(device) {
+    return {
+        node {
+            dir(path: '/home/vache/android/repos/cr') {
+                sh """#!/bin/bash
+. ./build/envsetup.sh
+lunch lineage_$device-userdebug"""
+            }
+        }
+    }
+}
+
+pipeline {
+    agent none
+
+    stages {
+        stage('Sync') {
+            steps {
+                script {
+                    for (x in labels) {
+                        def label = x
+
+                        builders[label] = {
+                            node(label) {
+                                dir(path: '/home/vache/android/repos/cr') {
+                                    //sh 'repo sync -j48 -cdf --force-sync'
+                                    sh 'echo syncing..'
+                                }
+                            }
+                        }
+                    }
+
+                    parallel builders
+                }
+            }
+        }
+        stage('Build') {
+            agent any
+
+            steps {
+                script {
+                    for (int i = 0; i < devices.size(); i++) {
+                        def device = devices.get(i)
+                        def stepName = "${device}"
+
+                        stepsForParallel[stepName] = transformIntoStep(device)
+                    }
+
+                    parallel stepsForParallel
+                }
+            }
+        }
+    }
+}

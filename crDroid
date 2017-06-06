@@ -10,20 +10,98 @@
 *
 */
 
-/* Nodes to build on */
-def labels = ['master']
+class Device {
+    String name
+    String node
+    boolean enabled
+}
+
+def devices = []
 
 /* Devices to build */
-def devices = ['addison', 'angler', 'athene', 'bacon', 'bullhead', 'cancro', 'clark', 'crackling', 'd800', 'd801', 'd802', 'd803', 'd850', 'd851', 'd852', 'd855', 'deb', 'ether', 'f400', 'falcon', 'ferrari', 'find7', 'flo', 'g3ds', 'gemini', 'griffin', 'h811', 'h815', 'h830', 'h850', 'hammerhead', 'hammerheadcaf', 'herolte', 'hero2lte', 'himaul', 'hockie', 'hydrogen', 'i9300', 'jfltexx', 'kipper', 'klte', 'kltechn', 'kltechnduo', 'klteduos', 'kltedv', 'kltekor', 'kltespr', 'klteusc', 'kltevzw', 'ks01ltexx', 'lettuce', 'ls980', 'ls990', 'm8', 'm8d', 'mako', 'mido', 'oneplus3', 'onyx', 'marlin', 'potter', 'pme', 's2', 'sailfish', 'shamu', 'thea', 'titan', 'tomato', 'v500', 'vs980', 'vs985']
+devices += new Device(name: 'addison', node: 'master', enabled: true)
+devices += new Device(name: 'angler', node: 'master', enabled: true)
+devices += new Device(name: 'athene', node: 'master', enabled: true)
+devices += new Device(name: 'bacon', node: 'master', enabled: true)
+devices += new Device(name: 'bullhead', node: 'master', enabled: true)
+devices += new Device(name: 'cancro', node: 'master', enabled: true)
+devices += new Device(name: 'clark', node: 'master', enabled: true)
+devices += new Device(name: 'crackling', node: 'master', enabled: true)
+devices += new Device(name: 'd800', node: 'master', enabled: true)
+devices += new Device(name: 'd801', node: 'master', enabled: true)
+devices += new Device(name: 'd802', node: 'master', enabled: true)
+devices += new Device(name: 'd803', node: 'master', enabled: true)
+devices += new Device(name: 'd850', node: 'master', enabled: true)
+devices += new Device(name: 'd851', node: 'master', enabled: true)
+devices += new Device(name: 'd852', node: 'master', enabled: true)
+devices += new Device(name: 'd855', node: 'master', enabled: true)
+devices += new Device(name: 'deb', node: 'master', enabled: true)
+devices += new Device(name: 'ether', node: 'master', enabled: true)
+devices += new Device(name: 'f400', node: 'master', enabled: true)
+devices += new Device(name: 'falcon', node: 'master', enabled: true)
+devices += new Device(name: 'ferrari', node: 'master', enabled: true)
+devices += new Device(name: 'find7', node: 'master', enabled: true)
+devices += new Device(name: 'flo', node: 'master', enabled: true)
+devices += new Device(name: 'g3ds', node: 'master', enabled: true)
+devices += new Device(name: 'gemini', node: 'master', enabled: true)
+devices += new Device(name: 'griffin', node: 'master', enabled: true)
+devices += new Device(name: 'h811', node: 'master', enabled: true)
+devices += new Device(name: 'h815', node: 'master', enabled: true)
+devices += new Device(name: 'h830', node: 'master', enabled: true)
+devices += new Device(name: 'h850', node: 'master', enabled: true)
+devices += new Device(name: 'hammerhead', node: 'master', enabled: true)
+devices += new Device(name: 'hammerheadcaf', node: 'master', enabled: true)
+devices += new Device(name: 'herolte', node: 'master', enabled: true)
+devices += new Device(name: 'hero2lte', node: 'master', enabled: true)
+devices += new Device(name: 'himaul', node: 'master', enabled: true)
+devices += new Device(name: 'hockie', node: 'master', enabled: true)
+devices += new Device(name: 'hydrogen', node: 'master', enabled: true)
+devices += new Device(name: 'i9300', node: 'master', enabled: true)
+devices += new Device(name: 'jfltexx', node: 'master', enabled: true)
+devices += new Device(name: 'kipper', node: 'master', enabled: true)
+devices += new Device(name: 'klte', node: 'master', enabled: true)
+devices += new Device(name: 'kltechn', node: 'master', enabled: true)
+devices += new Device(name: 'kltechnduo', node: 'master', enabled: true)
+devices += new Device(name: 'klteduos', node: 'master', enabled: true)
+devices += new Device(name: 'kltedv', node: 'master', enabled: true)
+devices += new Device(name: 'kltekor', node: 'master', enabled: true)
+devices += new Device(name: 'kltespr', node: 'master', enabled: true)
+devices += new Device(name: 'klteusc', node: 'master', enabled: true)
+devices += new Device(name: 'kltevzw', node: 'master', enabled: true)
+devices += new Device(name: 'ks01ltexx', node: 'master', enabled: true)
+devices += new Device(name: 'lettuce', node: 'master', enabled: true)
+devices += new Device(name: 'ls980', node: 'master', enabled: true)
+devices += new Device(name: 'ls990', node: 'master', enabled: true)
+devices += new Device(name: 'm8', node: 'master', enabled: true)
+devices += new Device(name: 'm8d', node: 'master', enabled: true)
+devices += new Device(name: 'mako', node: 'master', enabled: true)
+devices += new Device(name: 'mido', node: 'master', enabled: true)
+devices += new Device(name: 'oneplus3', node: 'master', enabled: true)
+devices += new Device(name: 'onyx', node: 'master', enabled: true)
+devices += new Device(name: 'marlin', node: 'master', enabled: true)
+devices += new Device(name: 'potter', node: 'master', enabled: true)
+devices += new Device(name: 'pme', node: 'master', enabled: true)
+devices += new Device(name: 's2', node: 'master', enabled: true)
+devices += new Device(name: 'sailfish', node: 'master', enabled: true)
+devices += new Device(name: 'shamu', node: 'master', enabled: true)
+devices += new Device(name: 'thea', node: 'master', enabled: true)
+devices += new Device(name: 'titan', node: 'master', enabled: true)
+devices += new Device(name: 'tomato', node: 'master', enabled: true)
+devices += new Device(name: 'v500', node: 'master', enabled: true)
+devices += new Device(name: 'vs980', node: 'master', enabled: true)
+devices += new Device(name: 'vs985', node: 'master', enabled: true)
+
+/* Nodes to build on */
+def labels = ['master']
 
 /* maps for parallel */
 def builders = [:]
 def stepsForParallel = [:]
 
 /* function to transform a string into a step */
-def transformIntoStep(device) {
+def transformIntoStep(device, nodeName) {
     return {
-        node {
+        node(nodeName) {
             dir(path: '/home/vache/android/repos/cr') {
                 sh """#!/bin/bash
 . ./build/envsetup.sh
@@ -40,12 +118,13 @@ pipeline {
         stage('Sync') {
             steps {
                 script {
-                    for (x in labels) {
-                        def label = x
+                    for (int i = 0; i < labels.size(); i++) {
+                        def label = labels.get(i)
+                        def nodePath = labelsPath.get(i);
 
                         builders[label] = {
                             node(label) {
-                                dir(path: '/home/vache/android/repos/cr') {
+                                dir(path: ${nodePath}) {
                                     //sh 'repo sync -j48 -cdf --force-sync'
                                     sh 'echo syncing..'
                                 }
@@ -64,9 +143,9 @@ pipeline {
                 script {
                     for (int i = 0; i < devices.size(); i++) {
                         def device = devices.get(i)
-                        def stepName = "${device}"
+                        def stepName = "${device.name}"
 
-                        stepsForParallel[stepName] = transformIntoStep(device)
+                        stepsForParallel[stepName] = transformIntoStep(device.name, device.node)
                     }
 
                     parallel stepsForParallel

@@ -1,21 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <manifest>
-    <!-- DEVICES -->
+  <!-- GENERIC -->
+  <project name="LineageOS/android_external_bson" path="external/bson" remote="github" />
+  <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" />
+  <project name="LineageOS/android_external_stlport" path="external/stlport" remote="github" />
+  <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" />
+  <project name="LineageOS/android_hardware_samsung_slsi-cm_exynos" path="hardware/samsung_slsi-cm/exynos" remote="github" />
+  <project name="LineageOS/android_hardware_samsung_slsi-cm_exynos5" path="hardware/samsung_slsi-cm/exynos5" remote="github" />
+  <project name="LineageOS/android_hardware_samsung_slsi-cm_exynos8890" path="hardware/samsung_slsi-cm/exynos8890" remote="github" />
+  <project name="LineageOS/android_hardware_samsung_slsi-cm_openmax" path="hardware/samsung_slsi-cm/openmax" remote="github" />
+  <project name="LineageOS/android_hardware_sony_thermanager" path="hardware/sony/thermanager" remote="github" />
+  <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" />
+  <project name="LineageOS/android_packages_apps_FlipFlap" path="packages/apps/FlipFlap" remote="github" />
+  <project name="LineageOS/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" />
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" />
+  <project name="LineageOS/android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" remote="github" />
+  <project name="LineageOS/android_vendor_nxp-nfc_opensource_frameworks" path="vendor/nxp-nfc/opensource/frameworks" remote="github" />
+  <project name="LineageOS/android_vendor_nxp-nfc_opensource_libnfc-nci" path="vendor/nxp-nfc/opensource/libnfc-nci" remote="github" />
 
-    <!-- VENDORS -->
-    <project path="vendor/motorola" name="TheMuppets/proprietary_vendor_motorola" remote="github"/>
-    <project path="vendor/oneplus" name="TheMuppets/proprietary_vendor_oneplus" remote="github"/>
-    <project path="vendor/leeco" name="TheMuppets/proprietary_vendor_leeco" remote="github"/>
-    <project path="vendor/xiaomi" name="TheMuppets/proprietary_vendor_xiaomi" remote="github"/>
-    <project path="vendor/yu" name="TheMuppets/proprietary_vendor_yu" remote="github"/>
-    <project path="vendor/samsung" name="TheMuppets/proprietary_vendor_samsung" remote="github"/>
-    <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" remote="github"/>
-    <project path="vendor/huawei" name="TheMuppets/proprietary_vendor_huawei" remote="github"/>
-    <project path="vendor/asus" name="TheMuppets/proprietary_vendor_asus" remote="github"/>
-    <project path="vendor/htc" name="TheMuppets/proprietary_vendor_htc" remote="github"/>
-    <project path="vendor/zuc" name="TheMuppets/proprietary_vendor_zuc" remote="github"/>
-    <project path="vendor/google" name="TheMuppets/proprietary_vendor_google" remote="github"/>
-    <project path="vendor/sony" name="TheMuppets/proprietary_vendor_sony" remote="github"/>
-    <project path="vendor/zte" name="TheMuppets/proprietary_vendor_zte" remote="github"/>
+  <!-- DEVICES -->
+  <project name="LineageOS/android_device_asus_deb" path="device/asus/deb" remote="github" />
+  <project name="LineageOS/android_device_asus_flo" path="device/asus/flo" remote="github" />
+  <project name="LineageOS/android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="github" />
+  <project name="LineageOS/android_device_google_marlin" path="device/google/marlin" remote="github" />
+  <project name="LineageOS/android_device_google_sailfish" path="device/google/sailfish" remote="github" />
+  <project name="LineageOS/android_device_htc_hima-common" path="device/htc/hima-common" remote="github" />
+  <project name="LineageOS/android_device_htc_himaul" path="device/htc/himaul" remote="github" />
+  <project name="LineageOS/android_device_htc_m8" path="device/htc/m8" remote="github" />
+  <project name="LineageOS/android_device_htc_m8-common" path="device/htc/m8-common" remote="github" />
+  <project name="LineageOS/android_device_htc_m8d" path="device/htc/m8d" remote="github" />
+  <project name="LineageOS/android_device_htc_msm8974-common" path="device/htc/msm8974-common" remote="github" />
+  <project name="LineageOS/android_device_htc_pme" path="device/htc/pme" remote="github" />
+  <project name="LineageOS/android_device_huawei_angler" path="device/huawei/angler" remote="github" />
+  <project name="LineageOS/android_device_leeco_s2" path="device/leeco/s2" remote="github" />
+  <project name="LineageOS/android_device_lge_bullhead" path="device/lge/bullhead" remote="github" />
+  <project name="LineageOS/android_device_lge_d800" path="device/lge/d800" remote="github" />
+  <project name="LineageOS/android_device_lge_d801" path="device/lge/d801" remote="github" />
+  <project name="LineageOS/android_device_lge_d802" path="device/lge/d802" remote="github" />
+  <project name="LineageOS/android_device_lge_d803" path="device/lge/d803" remote="github" />
+  <project name="LineageOS/android_device_lge_d850" path="device/lge/d850" remote="github" />
+  <project name="LineageOS/android_device_lge_d851" path="device/lge/d851" remote="github" />
+  <project name="LineageOS/android_device_lge_d852" path="device/lge/d852" remote="github" />
+  <project name="LineageOS/android_device_lge_d855" path="device/lge/d855" remote="github" />
+  <project name="LineageOS/android_device_lge_f400" path="device/lge/f400" remote="github" />
+  <project name="LineageOS/android_device_lge_g2-common" path="device/lge/g2-common" remote="github" />
+  <project name="LineageOS/android_device_lge_g3-common" path="device/lge/g3-common" remote="github" />
+  <project name="LineageOS/android_device_lge_g4-common" path="device/lge/g4-common" remote="github" />
+  <project name="LineageOS/android_device_lge_g5-common" path="device/lge/g5-common" remote="github" />
+  <project name="LineageOS/android_device_lge_gpad83-common" path="device/lge/gpad83-common" remote="github" />
+  <project name="LineageOS/android_device_lge_h811" path="device/lge/h811" remote="github" />
+  <project name="LineageOS/android_device_lge_h815" path="device/lge/h815" remote="github" />
+  <project name="LineageOS/android_device_lge_h830" path="device/lge/h830" remote="github" />
+  <project name="LineageOS/android_device_lge_h850" path="device/lge/h850" remote="github" />
+  <project name="LineageOS/android_device_lge_hammerhead" path="device/lge/hammerhead" remote="github" />
+  <project name="LineageOS/android_device_lge_hammerheadcaf" path="device/lge/hammerheadcaf" remote="github" />
+  <project name="LineageOS/android_device_lge_mako" path="device/lge/mako" remote="github" />
+  <project name="LineageOS/android_device_lge_msm8996-common" path="device/lge/msm8996-common" remote="github" />
+  <project name="LineageOS/android_device_lge_v500" path="device/lge/v500" remote="github" />
+  <project name="LineageOS/android_device_lge_vs980" path="device/lge/vs980" remote="github" />
+  <project name="LineageOS/android_device_lge_vs985" path="device/lge/vs985" remote="github" />
+  <project name="LineageOS/android_device_moto_shamu" path="device/moto/shamu" remote="github" />
+  <project name="LineageOS/android_device_motorola_addison" path="device/motorola/addison" remote="github" />
+  <project name="LineageOS/android_device_motorola_athene" path="device/motorola/athene" remote="github" />
+  <project name="LineageOS/android_device_motorola_clark" path="device/motorola/clark" remote="github" />
+  <project name="LineageOS/android_device_motorola_falcon" path="device/motorola/falcon" remote="github" />
+  <project name="LineageOS/android_device_motorola_griffin" path="device/motorola/griffin" remote="github" />
+  <project name="LineageOS/android_device_motorola_msm8226-common" path="device/motorola/msm8226-common" remote="github" />
+  <project name="LineageOS/android_device_motorola_thea" path="device/motorola/thea" remote="github" />
+  <project name="LineageOS/android_device_motorola_titan" path="device/motorola/titan" remote="github" />
+  <project name="LineageOS/android_device_nextbit_ether" path="device/nextbit/ether" remote="github" />
+  <project name="LineageOS/android_device_oneplus_bacon" path="device/oneplus/bacon" remote="github" />
+  <project name="LineageOS/android_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="github" />
+  <project name="LineageOS/android_device_oneplus_onyx" path="device/oneplus/onyx" remote="github" />
+  <project name="LineageOS/android_device_oppo_common" path="device/oppo/common" remote="github" />
+  <project name="LineageOS/android_device_oppo_find7" path="device/oppo/find7" remote="github" />
+  <project name="LineageOS/android_device_oppo_find7-common" path="device/oppo/find7-common" remote="github" />
+  <project name="LineageOS/android_device_oppo_msm8974-common" path="device/oppo/msm8974-common" remote="github" />
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" />
+  <project name="LineageOS/android_device_samsung_hero-common" path="device/samsung/hero-common" remote="github" />
+  <project name="LineageOS/android_device_samsung_hero2lte" path="device/samsung/hero2lte" remote="github" />
+  <project name="LineageOS/android_device_samsung_herolte" path="device/samsung/herolte" remote="github" />
+  <project name="LineageOS/android_device_samsung_i9300" path="device/samsung/i9300" remote="github" />
+  <project name="LineageOS/android_device_samsung_jf-common" path="device/samsung/jf-common" remote="github" />
+  <project name="LineageOS/android_device_samsung_jfltexx" path="device/samsung/jfltexx" remote="github" />
+  <project name="LineageOS/android_device_samsung_klte" path="device/samsung/klte" remote="github" />
+  <project name="LineageOS/android_device_samsung_klte-common" path="device/samsung/klte-common" remote="github" />
+  <project name="LineageOS/android_device_samsung_kltechn" path="device/samsung/kltechn" remote="github" />
+  <project name="LineageOS/android_device_samsung_kltechnduo" path="device/samsung/kltechnduo" remote="github" />
+  <project name="LineageOS/android_device_samsung_klteduos" path="device/samsung/klteduos" remote="github" />
+  <project name="LineageOS/android_device_samsung_kltedv" path="device/samsung/kltedv" remote="github" />
+  <project name="LineageOS/android_device_samsung_kltekor" path="device/samsung/kltekor" remote="github" />
+  <project name="LineageOS/android_device_samsung_kltespr" path="device/samsung/kltespr" remote="github" />
+  <project name="LineageOS/android_device_samsung_klteusc" path="device/samsung/klteusc" remote="github" />
+  <project name="LineageOS/android_device_samsung_kltevzw" path="device/samsung/kltevzw" remote="github" />
+  <project name="LineageOS/android_device_samsung_msm8974-common" path="device/samsung/msm8974-common" remote="github" />
+  <project name="LineageOS/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" />
+  <project name="LineageOS/android_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="github" />
+  <project name="LineageOS/android_device_wileyfox_crackling" path="device/wileyfox/crackling" remote="github" />
+  <project name="LineageOS/android_device_wileyfox_kipper" path="device/wileyfox/kipper" remote="github" />
+  <project name="LineageOS/android_device_xiaomi_cancro" path="device/xiaomi/cancro" remote="github" />
+  <project name="LineageOS/android_device_xiaomi_ferrari" path="device/xiaomi/ferrari" remote="github" />
+  <project name="LineageOS/android_device_xiaomi_gemini" path="device/xiaomi/gemini" remote="github" />
+  <project name="LineageOS/android_device_xiaomi_hydrogen" path="device/xiaomi/hydrogen" remote="github" />
+  <project name="LineageOS/android_device_xiaomi_msm8956-common" path="device/xiaomi/msm8956-common" remote="github" />
+  <project name="LineageOS/android_device_xiaomi_msm8996-common" path="device/xiaomi/msm8996-common" remote="github" />
+  <project name="LineageOS/android_device_yu_lettuce" path="device/yu/lettuce" remote="github" />
+  <project name="LineageOS/android_device_yu_tomato" path="device/yu/tomato" remote="github" />
+
+  <!-- KERNEL -->
+  <project name="LineageOS/android_kernel_cyanogen_msm8916" path="kernel/cyanogen/msm8916" remote="github" />
+  <project name="LineageOS/android_kernel_google_marlin" path="kernel/google/marlin" remote="github" />
+  <project name="LineageOS/android_kernel_google_msm" path="kernel/google/msm" remote="github" />
+  <project name="LineageOS/android_kernel_htc_msm8974" path="kernel/htc/msm8974" remote="github" />
+  <project name="LineageOS/android_kernel_htc_msm8994" path="kernel/htc/msm8994" remote="github" />
+  <project name="LineageOS/android_kernel_htc_msm8996" path="kernel/htc/msm8996" remote="github" />
+  <project name="LineageOS/android_kernel_huawei_angler" path="kernel/huawei/angler" remote="github" />
+  <project name="LineageOS/android_kernel_leeco_msm8976" path="kernel/leeco/msm8976" remote="github" />
+  <project name="LineageOS/android_kernel_lge_bullhead" path="kernel/lge/bullhead" remote="github" />
+  <project name="LineageOS/android_kernel_lge_g3" path="kernel/lge/g3" remote="github" />
+  <project name="LineageOS/android_kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="github" />
+  <project name="LineageOS/android_kernel_lge_msm8974" path="kernel/lge/msm8974" remote="github" />
+  <project name="LineageOS/android_kernel_lge_msm8992" path="kernel/lge/msm8992" remote="github" />
+  <project name="LineageOS/android_kernel_lge_msm8996" path="kernel/lge/msm8996" remote="github" />
+  <project name="LineageOS/android_kernel_lge_v500" path="kernel/lge/v500" remote="github" />
+  <project name="LineageOS/android_kernel_moto_shamu" path="kernel/moto/shamu" remote="github" />
+  <project name="LineageOS/android_kernel_motorola_msm8226" path="kernel/motorola/msm8226" remote="github" />
+  <project name="LineageOS/android_kernel_motorola_msm8952" path="kernel/motorola/msm8952" remote="github" />
+  <project name="LineageOS/android_kernel_motorola_msm8953" path="kernel/motorola/msm8953" remote="github" />
+  <project name="LineageOS/android_kernel_motorola_msm8992" path="kernel/motorola/msm8992" remote="github" />
+  <project name="LineageOS/android_kernel_motorola_msm8996" path="kernel/motorola/msm8996" remote="github" />
+  <project name="LineageOS/android_kernel_nextbit_msm8992" path="kernel/nextbit/msm8992" remote="github" />
+  <project name="LineageOS/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="github" />
+  <project name="LineageOS/android_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" remote="github" />
+  <project name="LineageOS/android_kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" />
+  <project name="LineageOS/android_kernel_oppo_msm8974" path="kernel/oppo/msm8974" remote="github" />
+  <project name="LineageOS/android_kernel_samsung_jf" path="kernel/samsung/jf" remote="github" />
+  <project name="LineageOS/android_kernel_samsung_klte" path="kernel/samsung/klte" remote="github" />
+  <project name="LineageOS/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" />
+  <project name="LineageOS/android_kernel_samsung_universal8890" path="kernel/samsung/universal8890" remote="github" />
+  <project name="LineageOS/android_kernel_xiaomi_cancro" path="kernel/xiaomi/cancro" remote="github" />
+  <project name="LineageOS/android_kernel_xiaomi_ferrari" path="kernel/xiaomi/ferrari" remote="github" />
+  <project name="LineageOS/android_kernel_xiaomi_msm8956" path="kernel/xiaomi/msm8956" remote="github" />
+  <project name="LineageOS/android_kernel_xiaomi_msm8996" path="kernel/xiaomi/msm8996" remote="github" />
+  <project name="LineageOS/lge-kernel-mako" path="kernel/lge/mako" remote="github" />
+
+  <!-- VENDORS -->
+  <project path="vendor/motorola" name="TheMuppets/proprietary_vendor_motorola" remote="github"/>
+  <project path="vendor/oneplus" name="TheMuppets/proprietary_vendor_oneplus" remote="github"/>
+  <project path="vendor/leeco" name="TheMuppets/proprietary_vendor_leeco" remote="github"/>
+  <project path="vendor/xiaomi" name="TheMuppets/proprietary_vendor_xiaomi" remote="github"/>
+  <project path="vendor/yu" name="TheMuppets/proprietary_vendor_yu" remote="github"/>
+  <project path="vendor/samsung" name="TheMuppets/proprietary_vendor_samsung" remote="github"/>
+  <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" remote="github"/>
+  <project path="vendor/huawei" name="TheMuppets/proprietary_vendor_huawei" remote="github"/>
+  <project path="vendor/asus" name="TheMuppets/proprietary_vendor_asus" remote="github"/>
+  <project path="vendor/htc" name="TheMuppets/proprietary_vendor_htc" remote="github"/>
+  <project path="vendor/zuk" name="TheMuppets/proprietary_vendor_zuk" remote="github"/>
+  <project path="vendor/google" name="TheMuppets/proprietary_vendor_google" remote="github"/>
+  <project path="vendor/sony" name="TheMuppets/proprietary_vendor_sony" remote="github"/>
+  <project path="vendor/zte" name="TheMuppets/proprietary_vendor_zte" remote="github"/>
 </manifest>

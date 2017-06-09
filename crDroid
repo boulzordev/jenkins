@@ -29,86 +29,6 @@ myNodes += new MyNode(name: 'home', workingDir: '/home/vache/android/cr')
 
 def devices = []
 
-/* Devices to build */
-devices += new Device(buildDay: 1, name: 'addison', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 1, name: 'angler', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 1, name: 'athene', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 1, name: 'bacon', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 1, name: 'bullhead', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 1, name: 'cancro', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 1, name: 'clark', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 1, name: 'crackling', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 1, name: 'd800', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 1, name: 'd801', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 1, name: 'd802', node: myNodes.get(0), enabled: true)
-
-devices += new Device(buildDay: 2, name: 'd803', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 2, name: 'd850', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 2, name: 'd852', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 2, name: 'd852', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 2, name: 'd855', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 2, name: 'deb', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 2, name: 'ether', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 2, name: 'f400', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 2, name: 'falcon', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 2, name: 'ferrari', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 2, name: 'find7', node: myNodes.get(0), enabled: true)
-
-devices += new Device(buildDay: 3, name: 'flo', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 3, name: 'g3ds', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 3, name: 'gemini', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 3, name: 'griffin', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 3, name: 'h833', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 3, name: 'h835', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 3, name: 'h830', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 3, name: 'h850', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 3, name: 'hammerhead', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 3, name: 'hammerheadcaf', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 3, name: 'herolte', node: myNodes.get(0), enabled: true)
-
-devices += new Device(buildDay: 4, name: 'hero2lte', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 4, name: 'himaul', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 4, name: 'hockie', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 4, name: 'hydrogen', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 4, name: 'i9300', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 4, name: 'jfltexx', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 4, name: 'kipper', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 4, name: 'klte', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 4, name: 'kltechn', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 4, name: 'kltechnduo', node: myNodes.get(0), enabled: true)
-
-devices += new Device(buildDay: 5, name: 'klteduos', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 5, name: 'kltedv', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 5, name: 'kltekor', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 5, name: 'kltespr', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 5, name: 'klteusc', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 5, name: 'kltevzw', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 5, name: 'ks05ltexx', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 5, name: 'lettuce', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 5, name: 'ls980', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 5, name: 'ls990', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 5, name: 'm8', node: myNodes.get(0), enabled: true)
-
-devices += new Device(buildDay: 6, name: 'm8d', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 6, name: 'mako', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 6, name: 'mido', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 6, name: 'oneplus3', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 6, name: 'onyx', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 6, name: 'marlin', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 6, name: 'potter', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 6, name: 'pme', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 6, name: 's2', node: myNodes.get(0), enabled: true)
-
-devices += new Device(buildDay: 7, name: 'sailfish', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 7, name: 'shamu', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 7, name: 'thea', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 7, name: 'titan', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 7, name: 'tomato', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 7, name: 'v500', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 7, name: 'vs980', node: myNodes.get(0), enabled: true)
-devices += new Device(buildDay: 7, name: 'vs985', node: myNodes.get(0), enabled: true)
-
-
 /* maps for parallel */
 def builders = [:]
 def stepsForParallel = [:]
@@ -132,6 +52,26 @@ def GetCurrentDay() {
     return day
 }
 
+def LoadDevices(nodes, devices) {
+    URL url = new URL("https://raw.githubusercontent.com/boulzordev/jenkins/master/devices.list");
+    InputStream is = url.openStream();
+    BufferedReader br = new BufferedReader(new InputStreamReader(is));
+    String line = br.readLine();
+    while(line != null && !line.isEmpty()) {
+        String[] curLineArray = line.split();
+        if (curLineArray.length == 4) {
+            Integer buildDay = Integer.valueOf(curLineArray[2]);
+            String deviceName = curLineArray[0];
+            MyNode currentNode = nodes.get(Integer.valueOf(curLineArray[1]));
+            Boolean deviceEnabled = Boolean.valueOf(curLineArray[3]);
+            devices += new Device(buildDay: buildDay, name: deviceName, node: currentNode, enabled: deviceEnabled)
+        }
+        line = br.readLine();
+    }
+
+    return devices;
+}
+
 pipeline {
     agent none
 
@@ -153,6 +93,16 @@ pipeline {
                     }
 
                     parallel builders
+                }
+            }
+        }
+        stage('Load devices') {
+            agent any
+
+            steps {
+                script {
+                    devices = LoadDevices(myNodes, devices);
+                    println(devices.size + " devices loaded");
                 }
             }
         }

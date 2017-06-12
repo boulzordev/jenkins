@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <manifest>
+  <!-- CUSTOM REMOTES -->
+  <remote name="8890dev" fetch="https://github.com/8890dev" revision="nougat" />
+
   <!-- GENERIC -->
   <project name="LineageOS/android_external_bson" path="external/bson" remote="github" />
   <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" />
@@ -160,4 +162,7 @@
   <project path="vendor/google" name="TheMuppets/proprietary_vendor_google" remote="github"/>
   <project path="vendor/sony" name="TheMuppets/proprietary_vendor_sony" remote="github"/>
   <project path="vendor/zte" name="TheMuppets/proprietary_vendor_zte" remote="github"/>
+
+  <!-- CUSTOM VENDOR SAMSUNG -->
+  <project path="vendor/samsung/hero-common" name="android_vendor_samsung_hero-common" remote="8890dev" />
 </manifest>
